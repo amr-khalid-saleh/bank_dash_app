@@ -21,13 +21,18 @@ class CustomSearchTextField extends StatelessWidget {
         cursorColor: Colors.black54,
         textAlignVertical: TextAlignVertical.center,
         decoration: InputDecoration(
-          isDense: true,
+          isCollapsed: true,
           filled: true,
-          constraints: BoxConstraints(maxHeight: 40, minHeight: 40),
           fillColor: Color(0xffF5F7FA),
+          constraints: BoxConstraints(maxHeight: 42, minHeight: 42),
+          contentPadding: EdgeInsets.symmetric(vertical: 10),
           prefix: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 12),
-            child: Icon(Icons.search_rounded, size: 18),
+            padding: const EdgeInsets.only(left: 16.0, right: 12.0),
+            child: Icon(
+              Icons.search_rounded,
+              size: 16,
+              color: Color(0xff8BA3CB),
+            ),
           ),
           hintText: 'Search for something',
           hintStyle: TextManager.bodyThree12Regular(context),
