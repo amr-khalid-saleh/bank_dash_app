@@ -1,3 +1,5 @@
+import 'package:bank_dash_app/core/utils/color_manager.dart';
+import 'package:bank_dash_app/features/dashboard/presentation/views/dashboard_view.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,7 +12,9 @@ class BankDashApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      color: Color(0xffFFFFFF),
+      debugShowCheckedModeBanner: false,
+      color: ColorManager.white,
+      home: DashboardView(),
     );
   }
 }
