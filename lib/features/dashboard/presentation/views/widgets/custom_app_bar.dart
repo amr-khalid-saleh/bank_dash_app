@@ -10,25 +10,21 @@ class CustomAppBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            IconButton(
-              onPressed: () {},
-              icon: Icon(
-                Icons.menu_rounded,
-                size: 24,
-                color: ColorManager.primary_2,
-              ),
-            ),
-            Text(pageName, style: TextManager.headingThree20SemiBold(context)),
-            CircleAvatar(
-              radius: 28,
-              backgroundImage: AssetImage(ImageManager.person),
-            ),
-          ],
+        IconButton(
+          onPressed: () {},
+          icon: Icon(
+            Icons.menu_rounded,
+            size: 24,
+            color: ColorManager.primary_2,
+          ),
+        ),
+        Text(pageName, style: TextManager.headingThree20SemiBold(context)),
+        CircleAvatar(
+          radius: 24,
+          backgroundImage: AssetImage(ImageManager.person),
         ),
       ],
     );

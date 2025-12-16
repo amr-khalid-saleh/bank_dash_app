@@ -1,4 +1,4 @@
-import 'package:bank_dash_app/features/dashboard/presentation/views/widgets/custom_app_bar.dart';
+import 'package:bank_dash_app/features/dashboard/presentation/views/widgets/custom_header.dart';
 import 'package:flutter/material.dart';
 
 class DashboardViewBody extends StatelessWidget {
@@ -10,7 +10,7 @@ class DashboardViewBody extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 24.0),
       child: Column(
           children: [
-            CustomAppBar(pageName: 'OverView')
+            CustomHeader(pageName: 'OverView')
           ]
       ),
     );
