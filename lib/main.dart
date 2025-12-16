@@ -9,6 +9,8 @@ class BankDashApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp();
+    return MaterialApp(
+      color: Color(0xffFFFFFF),
+    );
   }
 }

@@ -1,3 +1,4 @@
+import 'package:bank_dash_app/features/dashboard/presentation/views/widgets/dashboard_view_body.dart';
 import 'package:flutter/material.dart';
 
 class DashboardView extends StatelessWidget {
@@ -5,6 +6,8 @@ class DashboardView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: DashboardViewBody(),
+    );
   }
 }
