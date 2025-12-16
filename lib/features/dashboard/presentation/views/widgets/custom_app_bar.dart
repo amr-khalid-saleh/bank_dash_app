@@ -1,7 +1,6 @@
 import 'package:bank_dash_app/core/utils/color_manager.dart';
 import 'package:bank_dash_app/core/utils/image_manager.dart';
 import 'package:bank_dash_app/core/utils/text_manager.dart';
-import 'package:bank_dash_app/features/dashboard/presentation/views/widgets/custom_text_field.dart';
 import 'package:flutter/material.dart';
 
 class CustomAppBar extends StatelessWidget {
@@ -24,13 +23,11 @@ class CustomAppBar extends StatelessWidget {
                 color: ColorManager.primary_2,
               ),
             ),
-            Text(
-              pageName,
-              style: TextManager.headingThree20SemiBold.copyWith(
-                color: ColorManager.primary_2,
-              ),
+            Text(pageName, style: TextManager.headingThree20SemiBold(context)),
+            CircleAvatar(
+              radius: 28,
+              backgroundImage: AssetImage(ImageManager.person),
             ),
-            CircleAvatar(radius: 28, backgroundImage: AssetImage(ImageManager.person)),
           ],
         ),
       ],
