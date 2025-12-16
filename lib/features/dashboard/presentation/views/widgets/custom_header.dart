@@ -10,11 +10,11 @@ class CustomHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-        children: [
-          CustomAppBar(pageName: pageName),
-          CustomSearchTextField(),
-        ]
+      children: [
+        CustomAppBar(pageName: pageName),
+        const SizedBox(height: 20),
+        const CustomSearchTextField(),
+      ],
     );
   }
 }
-
